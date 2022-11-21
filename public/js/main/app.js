@@ -16,7 +16,7 @@ app.controller("todoController",['$scope','svTodos', function ($scope,svTodos) {
         }
         svTodos.create(todo).success(function(data){
             $scope.todos = data;
-            $scope.formData.text = {};
+            $scope.formData.text = "";
             $scope.loading = false;
         })
 
